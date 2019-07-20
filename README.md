@@ -46,17 +46,17 @@ try {
 
 Local installation:
 
-    $ npm install https://github.com/AvTrace/wepay-nodejs-sdk
+    $ npm install wepay-node
   OR
 
-    $ yarn add https://github.com/AvTrace/wepay-nodejs-sdk
+    $ yarn add wepay-node
 
 Global installation:
 
-    $ npm install -g https://github.com/AvTrace/wepay-nodejs-sdk
+    $ npm install -g wepay-node
   OR
 
-    $ yarn add https://github.com/AvTrace/wepay-nodejs-sdk -g 
+    $ yarn add wepay-node -g 
 
 Note:
 

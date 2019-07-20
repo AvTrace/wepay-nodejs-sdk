@@ -1,6 +1,6 @@
 {
-  "name": "wepay",
-  "version": "1.1.0",
+  "name": "wepay-node",
+  "version": "1.1.1",
   "description": "Wepay NodeJS Sdk",
   "main": "index.js",
   "repository": {
@@ -13,4 +13,8 @@
   },
   "homepage": "https://github.com/AvTrace/wepay-nodejs-sdk",
   "license": "MIT",
+  "author": "Babajide Fowotade <jide.b.tade@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/AvTrace/wepay-nodejs-sdk/issues"
+  }
 }
