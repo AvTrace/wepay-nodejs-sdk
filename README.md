@@ -1,14 +1,12 @@
 ![wepay logo](https://go.wepay.com/static/images/logo.svg)
 
-UNOFFICIAL but UPDATED WePay NodeJS SDK [wepay](https://www.wepay.com).
-This package was built off the Official NodeJS SDk by Wepay.
-Also credits to this REPO https://github.com/Kurtz193/NodeJS-SDK
+Yet another WePay NodeJS SDK [wepay](https://www.wepay.com) :) but with upgrades.
 
 ```js
 // load in your modules
 const { WepayClient } = require('wepay');
 
-const client = new WepayClient();
+const client = new WepayClient(access_token);
 
 client.use_staging();
 
