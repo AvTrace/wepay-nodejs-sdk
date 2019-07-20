@@ -1,20 +1,22 @@
 // load in your modules
 const WepayClient = require('./lib/wepayClient');
 
-const WEPAY_ACCESS_TOKEN = 'a9asdaff4cb866893119097e0c29ee1f7886b3891e76b4599cb589c232b4f8f6ddcd';
-
 async function callWepay() {
-  const client = new WepayClient(
-    WEPAY_ACCESS_TOKEN
-  );
+  const client = new WepayClient();
 
   try {
-    const response = await client.call('/checkout/create', {
-      account_id: 1513122,
-      amount: 50,
-      currency: 'USD',
-      short_description: 'Selling 42 Pens',
-      type: 'goods',
+    const response = await client.call('register_user', {
+      client_id: 1111111,
+      client_secret: 'your_client_secret',
+      email: 'api@wepay.com',
+      scope: 'manage_accounts,collect_payments,view_user,preapprove_payments,send_money',
+      first_name: 'Bill',
+      last_name: 'Klenco',
+      tos_acceptance_time: + new Date(),
+      original_ip: '74.125.224.84',
+      original_device: `Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6;
+                             en-US) AppleWebKit/534.13 (KHTML, like Gecko)
+                             Chrome/9.0.597.102 Safari/534.13`
     });
 
     console.log(response);

@@ -1,17 +1,19 @@
 ![wepay logo](https://go.wepay.com/static/images/logo.svg)
 
-Official WePay NodeJS SDK [wepay](https://www.wepay.com).
+UNOFFICIAL but UPDATED WePay NodeJS SDK [wepay](https://www.wepay.com).
+This package was built off the Official NodeJS SDk by Wepay.
+Also credits to this REPO https://github.com/Kurtz193/NodeJS-SDK
 
 ```js
 // load in your modules
 const { WepayClient } = require('wepay');
 
-const client = new WepayClient(process.env.WEPAY_ACCESS_TOKEN);
+const client = new WepayClient();
 
 client.use_staging();
 
 client
-  .call('/checkout/create', {
+  .call('create_checkout', {
     account_id: 1723052,
     amount: 50,
     currency: 'USD',
@@ -25,10 +27,10 @@ client
     console.log(error);
   });
 
-// If you use Node.js v7.4 or above you can leverage async/await
+// If you use Node.js v7.4 or above you can use async/await
 
 try {
-  const response = await client.call('/checkout/create', {
+  const response = await client.call('create_checkout', {
     account_id: 1723052,
     amount: 50,
     currency: 'USD',
@@ -46,11 +48,15 @@ try {
 
 Local installation:
 
-    $ npm install wepay
+    $ npm install https://github.com/AvTrace/wepay-nodejs-sdk
+  OR
+    $ yarn add https://github.com/AvTrace/wepay-nodejs-sdk
 
 Global installation:
 
-    $ npm install -g wepay
+    $ npm install -g https://github.com/AvTrace/wepay-nodejs-sdk
+  OR
+    $ yarn add https://github.com/AvTrace/wepay-nodejs-sdk -g 
 
 Note:
 
@@ -83,7 +89,7 @@ You can supply WePay with risk-related information on every API call by passing 
 ```js
 client
   .call(
-    '/checkout/create',
+    'create_checkout',
     {
       account_id: 1723052,
       amount: 50,
@@ -104,7 +110,7 @@ client
 // Or with async/await
 try {
   const response = await client.call(
-    '/checkout/create',
+    'create_checkout',
     {
       account_id: 1723052,
       amount: 50,
@@ -134,7 +140,7 @@ Detailed information regarding the Risk Headers can be found at the [WePay API D
 
 (The MIT License)
 
-Copyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+Copyright (c) 2009-2019 Avtrace Inc;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
