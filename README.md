@@ -68,6 +68,8 @@ Install dependencies:
 
 ## Endpoints
 
+Check `lib/endpoints` for more call endpoints.
+
 You can specify in the SDK which endpoint (stage or prod) you wish to use. See, [endpoints](https://stage.wepay.com/developer/reference/endpoints).
 
 To use staging endpoint:
