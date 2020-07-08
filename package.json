@@ -9,7 +9,7 @@
   },
   "keywords": ["wepay", "wepay-nodejs", "wepay nodejs sdk", "chase wepay", "wepay sdk promise"],
   "engines": {
-    "node": ">=12.18.1"
+    "node": ">=12"
   },
   "homepage": "https://github.com/AvTrace/wepay-nodejs-sdk",
   "license": "MIT",
