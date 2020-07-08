@@ -1,6 +1,6 @@
 {
   "name": "wepay-node",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Wepay NodeJS Sdk",
   "main": "index.js",
   "repository": {
