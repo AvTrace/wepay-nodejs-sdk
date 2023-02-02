@@ -1,4 +1,4 @@
-![wepay logo](https://go.wepay.com/static/images/logo.svg)
+![wepay logo](https://images.contentstack.io/v3/assets/bltf86d70f093add08d/blt63c9f31073b6633e/63330deff709a318104f8e81/WePay_RGB_(1).svg)
 
 Yet another WePay NodeJS SDK [wepay](https://www.wepay.com) :) but with upgrades.
 
